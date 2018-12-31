@@ -1,13 +1,16 @@
-FROM kynetiv/selenium-node-chromium-pi:3.4.0
+FROM kynetiv/selenium-node-chromium-pi:3.141.59-dubnium
 
-USER root
+USER seluser
 
 #====================================
 # Scripts to run Selenium Standalone
 #====================================
-COPY entry_point.sh /opt/bin/entry_point.sh
-RUN chmod +x /opt/bin/entry_point.sh
+COPY start-selenium-standalone.sh /opt/bin/start-selenium-standalone.sh
 
-USER seluser
+#==============================
+# Supervisor configuration file
+#==============================
+COPY selenium.conf /etc/supervisor/conf.d/
+
 
 EXPOSE 4444

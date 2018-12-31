@@ -1,5 +1,3 @@
-FROM kynetiv/selenium-base-pi:3.141.59-dubnium
-
 USER root
 
 #==============
