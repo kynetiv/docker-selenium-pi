@@ -2,7 +2,7 @@
 
 The project is thanks to the great work by [SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium).
 
-Currently a limited port mostly to include a StandaloneChrome (Chromium Browser) version that runs on the Raspberry Pi 2/3.
+Currently a limited port mostly to include a StandaloneChrome (Chromium Browser) version that runs on the Raspberry Pi 2/3/4.
 
 ### See Docker Hub for more details
 
